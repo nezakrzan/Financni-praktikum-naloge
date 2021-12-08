@@ -104,10 +104,9 @@ EG <- function(vrsta, alpha) {
 #(b) 0.1 ≤ α ≤ 0.3  Glajenje časovne vrste,napoved in graf
 #------------------------------------------------------------
 par(mfrow = (c(1,1)))
-izbrani_alpha = 0.15
+izbrani_alpha = 0.2 #ne spomnim se dobro, ali je bilo naročeno, da mora biti 0.2
 
-EG_glajenje <- EG(casovna_vrsta, izbrani_alpha)
-napoved <- 
+EG_napoved <- EG(casovna_vrsta, izbrani_alpha)
 
 ts.plot(casovna_vrsta, EG_glajenje, xlab = "Time", ylab = "USD", main="Eksponento glajenje",lwd=1:2,col=1:10)
 points(casovna_vrsta, pch = 20)
