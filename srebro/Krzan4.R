@@ -110,3 +110,4 @@ EG_napoved <- EG(casovna_vrsta, izbrani_alpha)
 
 ts.plot(casovna_vrsta, EG_glajenje, xlab = "Time", ylab = "USD", main="Eksponento glajenje",lwd=1:2,col=1:10)
 points(casovna_vrsta, pch = 20)
+
